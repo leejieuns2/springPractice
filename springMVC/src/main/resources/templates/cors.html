@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CORS Client</title>
+</head>
+<script src="/webjars/jquery/3.6.0/dist/jquery.min.js"></script>
+<script>
+    $(function() {
+        $.ajax("http://localhost:8080/cors").done(function (msg) {
+            alert(msg);
+        })
+        .fail(function () {
+            alert("fail!");
+        })
+        }
+    );
+</script>
+<body>
+
+</body>
+</html>
