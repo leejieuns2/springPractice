@@ -43,13 +43,15 @@ public class JpaMain {
             entityManager.remove(member);
             */
 
-            // DB select
+            /* DB select
             Member findMember = entityManager.find(Member.class, 1L);
             System.out.println("findMember id = " + findMember.getId());
             System.out.println("findMember name = " + findMember.getName());
+             */
 
-            // DB update
+            /* DB update
             findMember.setName("HelloJPA");
+             */
 
             // 자바 객체를 대상으로 쿼리를 작성하기 때문에 일반적인 query랑 약간 다름.
             entityManager.createQuery("select m from Member as m", Member.class).getResultList();
