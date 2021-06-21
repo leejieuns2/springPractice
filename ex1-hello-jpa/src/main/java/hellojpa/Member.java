@@ -8,7 +8,7 @@ import java.util.List;
 @Entity
 @SequenceGenerator(name = "MEMBER_SEQ_GENERATOR",
         sequenceName = "MEMBER_SEQ", initialValue = 1, allocationSize = 1)
-public class Member {
+public class Member extends BaseEntity {
 
     // Annotation에서 필요한 매핑 처리를 해줌.
 
