@@ -24,7 +24,7 @@ public class Member extends BaseEntity {
     // 일대다 양방향 매핑은 공식적으로 존재하지 않으나,
     // 읽기 전용 필드를 속성을 통해 추가 정의하여 양방향처럼 사용이 가능하다.
     // 되도록이면 다대일 양방향 매핑을 사용하는 것이 좋다.
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY) // 지연로딩 사용 (@ManyToOne은 기본값이 Eager이기 때문에 Lazy 설정이 반드시 필요함)
     @JoinColumn(name = "TEAM_ID", insertable = false, updatable = false)
     private Team team;
 
