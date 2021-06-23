@@ -1,4 +1,7 @@
-package jpql;
+package main;
+
+import jpql.Member;
+import jpql.MemberDTO;
 
 import javax.persistence.*;
 import java.util.ArrayList;

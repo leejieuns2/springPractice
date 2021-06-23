@@ -21,6 +21,9 @@
             <property name="hibernate.format_sql" value="true"/>
             <property name="hibernate.use_sql_comments" value="true"/>
             <property name="hibernate.hbm2ddl.auto" value="create" />
+
+            <!-- fetch size 조절 (n+1 문제 방지) -->
+            <property name="hibernate.default_batch_fetch_size" value="100"/>
         </properties>
     </persistence-unit>
 

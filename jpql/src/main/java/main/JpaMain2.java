@@ -1,4 +1,8 @@
-package jpql;
+package main;
+
+import jpql.Member;
+import jpql.MemberType;
+import jpql.Team;
 
 import javax.persistence.*;
 import java.util.List;
