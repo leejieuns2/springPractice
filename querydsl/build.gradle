@@ -24,8 +24,11 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-web'
 
-    //querydsl 추가
+    // querydsl 추가
     implementation 'com.querydsl:querydsl-jpa'
+
+    // query parameter log 남기기
+    implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.5.8'
 
     compileOnly 'org.projectlombok:lombok'
     runtimeOnly 'com.h2database:h2'
